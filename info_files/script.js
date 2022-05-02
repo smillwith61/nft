@@ -171,8 +171,8 @@ $(document).ready(function() {
 			return;
 		})
 	})
-	.fail(function(){
-		console.log("An error has occurred.");
-		return;
-	});
+	.fail(function(jqXMLHttpRequest,textStatus,errorThrown) {
+            console.dir(jqXMLHttpRequest);
+            alert('Ajax data request failed: "'+textStatus+':'+errorThrown+'" - see javascript console for details.');
+      });
 });
