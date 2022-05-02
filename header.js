@@ -9,7 +9,7 @@ function lookupNumber() {
 
 function lookupWallet() {
 	let addr = $('#lookup_wallet').val();
-	open("/wallet.html?addr=" + addr);
+	open("/wallet.htm?addr=" + addr);
 }
 
 function isMobileWidth() {
