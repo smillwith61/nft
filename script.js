@@ -57,7 +57,7 @@ $(document).ready(function() {
 					target:"_blank", rel:"noopener noreferrer"
 				})
 
-				// randomize +++ �ndern auf 10.000
+				// randomize +++ ändern auf 10.000
 				let indices = [];
 				for (let i = 0; i < 50; i++) {
 					indices[i] = i;
@@ -77,25 +77,25 @@ $(document).ready(function() {
 				});
 
 				let emojis = {
-					"outline_type": "🔲",
-					"bg_style": "🖼",
-					"claw_left": "👈",
-					"claw_right": "👉",
-					"claws_unique": "🙌",
-					"has_cigarette": "🚬",
-					"legs": "🦵",
-					"tail": "💉",
-					"bloody_tail": "🩸",
-					"has_matches": "🔥",
-					"has_halo": "👼",
-					"multicolored": "🦚",
-					"colored_claws": "🟢",
-					"colored_core": "🔵",
-					"colored_tail": "🟣",
-					"multicolor_type": "🦓",
-					"false_face": "🤡",
-					"evil_eye": "👁",
-					"no_eyes": "🙈"
+					"outline_type": "ðŸ”²",
+					"bg_style": "ðŸ–¼",
+					"claw_left": "ðŸ‘ˆ",
+					"claw_right": "ðŸ‘‰",
+					"claws_unique": "ðŸ™Œ",
+					"has_cigarette": "ðŸš¬",
+					"legs": "ðŸ¦µ",
+					"tail": "ðŸ’‰",
+					"bloody_tail": "ðŸ©¸",
+					"has_matches": "ðŸ”¥",
+					"has_halo": "ðŸ‘¼",
+					"multicolored": "ðŸ¦š",
+					"colored_claws": "ðŸŸ¢",
+					"colored_core": "ðŸ”µ",
+					"colored_tail": "ðŸŸ£",
+					"multicolor_type": "ðŸ¦“",
+					"false_face": "ðŸ¤¡",
+					"evil_eye": "ðŸ‘",
+					"no_eyes": "ðŸ™ˆ"
 				}
 
 				// create the filters
@@ -139,7 +139,7 @@ $(document).ready(function() {
 				$('.filters_container').hide();
 
 				function filtersVisibleText() {
-					$('.filters_link a').text("filters " + ($('.filters_container').is(":visible") ? "▴" : "▾"));
+					$('.filters_link a').text("filters " + ($('.filters_container').is(":visible") ? "â–´" : "â–¾"));
 				}
 				filtersVisibleText();
 
@@ -313,7 +313,7 @@ function createScorpCard(scorpObj, attribute_stats, is_reserved, wallet_addr, in
 			)
 		}
 		// $('#available').text(avail_text).css('color', avail_color);
-		$('.more_info a').attr("href", "info/?number=" + scorpObj.number)
+		$('.more_info a').attr("href", "info.htm?number=" + scorpObj.number)
 
 		// add stats
 		$('.popup_stats').empty();
@@ -359,7 +359,7 @@ function createScorpCard(scorpObj, attribute_stats, is_reserved, wallet_addr, in
 				// .append( $('<td>', { style: "text-align: right; font-family: 'Overpass Mono', monospace;" }).text(at_stat.rarity));
 				.append( $('<td>', {
 					style: "text-align: right; color: " + col + "; background-color: " + bg_col + ";"
-				}).text(at_stat.rarity.substring(0, 1) + "★" + at_stat.rarity.substring(1)).css('white-space', 'pre'));
+				}).text(at_stat.rarity.substring(0, 1) + "â˜…" + at_stat.rarity.substring(1)).css('white-space', 'pre'));
 			// console.log('key: ' + key + ' value: ' + scorpObj.attributes[key]);
 			// stat_text += key + ": " + scorpObj.attributes[key] + "\n"
 		})
