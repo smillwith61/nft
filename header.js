@@ -61,7 +61,7 @@ $(document).ready(function() {
 		<div id="mobile-indicator"></div>
 	`;
 	let html = $.parseHTML(html_str);
-	
+	$('.site_header').append(html);
 
 	$('.title_hamburger').click(function() {
 		let cur_display = $('.header_content').css('display');
