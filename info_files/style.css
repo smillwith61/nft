@@ -1,0 +1,13 @@
+.colors {
+	margin: 20px auto;
+	max-width: 240px;
+	text-align: center;
+}
+
+.downloads_container_div {
+	margin: 0 0 20px 0;
+}
+
+.downloads_link a {
+	text-decoration: none;
+}
