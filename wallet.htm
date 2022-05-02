@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta charset="UTF-8">
+	<meta content="width=device-width, initial-scale=1" name="viewport">
+	<title>abandoned scorpions: wallet</title>
+	<link rel="apple-touch-icon" sizes="180x180" href="https://radstrike.com/scorpions/ico/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="https://radstrike.com/scorpions/ico/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="https://radstrike.com/scorpions/ico/favicon-16x16.png">
+	<link rel="manifest" href="https://radstrike.com/scorpions/ico/site.webmanifest">
+	<link rel="stylesheet" href="wallet_files/style_002.css">
+	<link rel="stylesheet" href="wallet_files/style.css">
+	<script src="wallet_files/jquery-3.js"></script>
+	<script src="wallet_files/header.js"></script>
+	<script src="wallet_files/script.js"></script>
+</head>
+<body>
+
+<div class="site_header">
+		<div class="title">
+			<a class="title_name" href="https://radstrike.com/scorpions"><h3>Abandoned Scorpions</h3></a>
+			<a class="title_hamburger" href="javascript:void(0)"><h3>☰</h3></a>
+		</div>
+		<div class="header_content">
+			<div class="links">
+				<div class="social_logos">
+				<a href="https://t.me/AbandonedScorpions">
+					<img src="wallet_files/telegram.svg" title="telegram">
+				</a>
+				<a href="https://twitter.com/AbandonedScorps">
+					<img src="wallet_files/twitter.svg" title="twitter">
+				</a>
+				</div>
+				<a href="https://radstrike.com/scorpions/about/#about">about</a>
+				<a href="https://radstrike.com/scorpions/about/#instructions">instructions</a>
+			</div>
+
+			<div class="header_other">
+				<div class="lookup_div">
+					<span>
+						<input class="lookup_input" id="lookup_input" type="text" maxlength="4" pattern="d{4}" placeholder="0123">
+					</span>
+					<span>
+						<button onclick="lookupNumber()">lookup</button>
+					</span>
+				</div>
+				<div class="lookup_wallet_spacer"></div>
+				<div class="lookup_div">
+					<span>
+						<input class="lookup_input" id="lookup_wallet" type="text" placeholder="rdx1qspudnjc0h2cmxh552uzjp7ck40zh0da8mlusgqgtpphwtyvqur2kgql2umgx">
+					</span>
+					<span>
+						<button class="lookup_wallet_btn" onclick="lookupWallet()">wallet</button>
+					</span>
+				</div>
+			</div>
+		</div>
+
+		<!-- https://stackoverflow.com/a/21351445 -->
+		<div id="mobile-indicator"></div>
+	</div>
+
+<div class="wallet_page">
+	<div class="wallet_container">
+		<h2>Wallet</h2>
+		<div class="wallet_addr_div">
+			<p class="wallet_addr">Address:<br></p>
+		</div>
+		<div class="wallet_grid"></div>
+	</div>
+	<a href="https://radstrike.com/scorpions">home</a>
+</div>
+
+
+
+</body></html>
