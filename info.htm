@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta charset="UTF-8">
+	<meta content="width=device-width, initial-scale=1" name="viewport">
+	<title>abandoned scorpions: info</title>
+	<link rel="apple-touch-icon" sizes="180x180" href="https://radstrike.com/scorpions/ico/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="https://radstrike.com/scorpions/ico/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="https://radstrike.com/scorpions/ico/favicon-16x16.png">
+	<link rel="manifest" href="https://radstrike.com/scorpions/ico/site.webmanifest">
+	<link rel="stylesheet" href="abandoned%20scorpions%20info_files/style_002.css">
+	<link rel="stylesheet" href="abandoned%20scorpions%20info_files/style.css">
+	<script src="abandoned%20scorpions%20info_files/jquery-3.js"></script>
+	<script src="abandoned%20scorpions%20info_files/header.js"></script>
+	<script src="abandoned%20scorpions%20info_files/script.js"></script>
+</head>
+<body>
+
+<div class="site_header">
+		<div class="title">
+			<a class="title_name" href="https://radstrike.com/scorpions"><h3>Abandoned Scorpions</h3></a>
+			<a class="title_hamburger" href="javascript:void(0)"><h3>☰</h3></a>
+		</div>
+		<div class="header_content">
+			<div class="links">
+				<div class="social_logos">
+				<a href="https://t.me/AbandonedScorpions">
+					<img src="abandoned%20scorpions%20info_files/telegram.svg" title="telegram">
+				</a>
+				<a href="https://twitter.com/AbandonedScorps">
+					<img src="abandoned%20scorpions%20info_files/twitter.svg" title="twitter">
+				</a>
+				</div>
+				<a href="https://radstrike.com/scorpions/about/#about">about</a>
+				<a href="https://radstrike.com/scorpions/about/#instructions">instructions</a>
+			</div>
+
+			<div class="header_other">
+				<div class="lookup_div">
+					<span>
+						<input class="lookup_input" id="lookup_input" type="text" maxlength="4" pattern="d{4}" placeholder="0123">
+					</span>
+					<span>
+						<button onclick="lookupNumber()">lookup</button>
+					</span>
+				</div>
+				<div class="lookup_wallet_spacer"></div>
+				<div class="lookup_div">
+					<span>
+						<input class="lookup_input" id="lookup_wallet" type="text" placeholder="rdx1qspudnjc0h2cmxh552uzjp7ck40zh0da8mlusgqgtpphwtyvqur2kgql2umgx">
+					</span>
+					<span>
+						<button class="lookup_wallet_btn" onclick="lookupWallet()">wallet</button>
+					</span>
+				</div>
+			</div>
+		</div>
+
+		<!-- https://stackoverflow.com/a/21351445 -->
+		<div id="mobile-indicator"></div>
+	</div>
+
+<div class="info_page_container">
+	<div class="popup_preview">
+		<img src="abandoned%20scorpions%20info_files/3509_large.png">
+		<h4 id="scorp_no_label">Scorpion No.</h4>
+		<h1 id="scorp_no">3509</h1>
+		<div class="scorp_nickname_div">
+			<p id="scorp_nickname"></p>
+		</div>
+		<div class="reserved_by_div">
+			<p id="reserved_by" style="color: gray;">reserved by:
+<a class="wallet_addr_link" href="https://radstrike.com/scorpions/wallet/?addr=rdx1qspph0gh69mlxmmv3dddtyy64lstyefkjzaz29esq87348p029xahvq7ylhwx">rdx1qspph0gh69mlxmmv3dddtyy64lstyefkjzaz29esq87348p029xahvq7ylhwx</a></p>
+		</div>
+		<!-- <p id="reserved_by_wallet"></p> -->
+		<!-- <div class="popup_preview_spacer"></div> -->
+		<label>attributes</label>
+		<div class="popup_stats_info"><table><tr><th>attribute</th><th class="value_col">value</th><th>rarity</th></tr><tr><td>outline_type</td><td class="value_col">black</td><td style="text-align: right; color: gray; white-space: pre;">0★  68%</td></tr><tr><td>bg_style</td><td class="value_col">blank</td><td style="text-align: right; color: gray; white-space: pre;">0★  39%</td></tr><tr><td>claw_left</td><td class="value_col">big</td><td style="text-align: right; color: black; white-space: pre;">1★  29%</td></tr><tr><td>claw_right</td><td class="value_col">big</td><td style="text-align: right; color: black; white-space: pre;">1★  29%</td></tr><tr><td>has_cigarette</td><td class="value_col">false</td><td style="text-align: right; color: gray; white-space: pre;">0★  99%</td></tr><tr><td>legs</td><td class="value_col">normal</td><td style="text-align: right; color: gray; white-space: pre;">0★  63%</td></tr><tr><td>tail</td><td class="value_col">syringe</td><td style="text-align: right; color: darkorange; white-space: pre;">3★ 8.3%</td></tr><tr><td>bloody_tail</td><td class="value_col">false</td><td style="text-align: right; color: gray; white-space: pre;">0★  98%</td></tr><tr><td>has_matches</td><td class="value_col">false</td><td style="text-align: right; color: gray; white-space: pre;">0★  99%</td></tr><tr><td>has_halo</td><td class="value_col">false</td><td style="text-align: right; color: gray; white-space: pre;">0★  99%</td></tr><tr><td>multicolored</td><td class="value_col">true</td><td style="text-align: right; color: black; white-space: pre;">1★  24%</td></tr><tr><td>colored_claws</td><td class="value_col">true</td><td style="text-align: right; color: darkorange; white-space: pre;">3★  12%</td></tr><tr><td>colored_core</td><td class="value_col">false</td><td style="text-align: right; color: gray; white-space: pre;">0★  89%</td></tr><tr><td>colored_tail</td><td class="value_col">false</td><td style="text-align: right; color: gray; white-space: pre;">0★  89%</td></tr><tr><td>multicolor_type</td><td class="value_col">stripes</td><td style="text-align: right; color: darkorange; white-space: pre;">3★  11%</td></tr><tr><td>false_face</td><td class="value_col">none</td><td style="text-align: right; color: gray; white-space: pre;">0★  95%</td></tr><tr><td>evil_eye</td><td class="value_col">none</td><td style="text-align: right; color: gray; white-space: pre;">0★  96%</td></tr><tr><td>no_eyes</td><td class="value_col">false</td><td style="text-align: right; color: gray; white-space: pre;">0★  98%</td></tr><tr><td>claws_unique</td><td class="value_col">false</td><td style="text-align: right; color: gray; white-space: pre;">0★  96%</td></tr></table></div>
+		<div class="colors">
+			<label>colors</label>
+			<table><tr><td style="background-color: rgb(0, 0, 0); color: rgb(255, 255, 255); text-align: left;">outline_color</td><td style="background-color: rgb(0, 0, 0); color: rgb(255, 255, 255);">#000000</td></tr><tr><td style="background-color: rgb(180, 255, 255); color: rgb(0, 0, 0); text-align: left;">body_color</td><td style="background-color: rgb(180, 255, 255); color: rgb(0, 0, 0);">#B4FFFF</td></tr><tr><td style="background-color: rgb(255, 255, 67); color: rgb(0, 0, 0); text-align: left;">eye_color</td><td style="background-color: rgb(255, 255, 67); color: rgb(0, 0, 0);">#FFFF43</td></tr><tr><td style="background-color: rgb(47, 255, 255); color: rgb(0, 0, 0); text-align: left;">bg2_color</td><td style="background-color: rgb(47, 255, 255); color: rgb(0, 0, 0);">#2FFFFF</td></tr><tr><td style="background-color: rgb(47, 180, 67); color: rgb(0, 0, 0); text-align: left;">secondary_color</td><td style="background-color: rgb(47, 180, 67); color: rgb(0, 0, 0);">#2FB443</td></tr></table>
+		</div>
+		<div class="downloads_container_div">
+			<div class="downloads_link">
+				<a href="javascript:void(0)">downloads ▾</a>
+			</div>
+			<div class="downloads_container" style="display: none;">
+				<a id="32px" href="https://radstrike.com/scorpions/img/3509.png">small png (32px)</a>
+				<br>
+				<a id="jpeg" href="https://radstrike.com/scorpions/img/jpg/3509.jpg">jpeg (Telegram avatar fix)</a>
+			</div>
+		</div>
+		<a href="https://radstrike.com/scorpions/">home</a>
+	</div>
+</div>
+
+
+
+</body></html>

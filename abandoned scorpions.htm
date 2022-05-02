@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta charset="UTF-8">
+	<meta content="width=device-width, initial-scale=1" name="viewport">
+	<title>abandoned scorpions</title>
+	<link rel="apple-touch-icon" sizes="180x180" href="https://radstrike.com/scorpions/ico/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="https://radstrike.com/scorpions/ico/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="https://radstrike.com/scorpions/ico/favicon-16x16.png">
+	<link rel="manifest" href="https://radstrike.com/scorpions/ico/site.webmanifest">
+	<link rel="stylesheet" href="style.css">
+	<script src="jquery-3.js"></script>
+	<script src="header.js"></script>
+	<script src="script.js"></script>
+</head>
+<body style="overflow-y: scroll;">
+
+<div class="popup_close_btn">
+	<button type="button"></button>
+</div>
+
+<div class="site_header">
+		<!-- https://stackoverflow.com/a/21351445 -->
+		<div id="mobile-indicator"></div>
+	</div>
+<div class="sold_out_temp">
+    <p style="text-align: center; font-size: 32px;">SOLD OUT!!</p>
+    <p style="text-align: center;">please join <a href="https://t.me/AbandonedScorpions">t.me/AbandonedScorpions</a> for more info and fd updates!</p>
+</div>
+<div class="reserved_info">
+	<span>100.0% reserved</span>
+</div>
+<div class="filters_link">
+	<a href="javascript:void(0)">filters ▾</a>
+</div>
+<div class="filters_container" style="display: none;">
+					<div class="hide_unavailable_div filter_segment">
+						<input type="checkbox" id="hide_unavailable" name="hide_unavailable" value="hide_unavailable">
+						<label for="hide_unavailable">hide unavailable</label>
+					</div>
+				
+
+	<!-- <div class="hide_unavailable_div">
+		<input type="checkbox" id="hide_unavailable" name="hide_unavailable" value="hide_unavailable">
+		<label for="hide_unavailable">hide unavailable</label>
+	</div> -->
+
+	<div class="filters"><div class="filter_segment" id="outline_type"><label><span class="emoji">🔲</span> <b>outline_type</b></label><div><input type="checkbox" id="outline_type__black" name="black" value="outline_type__black"><label for="outline_type__black">black</label></div><div><input type="checkbox" id="outline_type__dark" name="dark" value="outline_type__dark"><label for="outline_type__dark">dark</label></div><div><input type="checkbox" id="outline_type__light" name="light" value="outline_type__light"><label for="outline_type__light">light</label></div><div><input type="checkbox" id="outline_type__white" name="white" value="outline_type__white"><label for="outline_type__white">white</label></div></div><div class="filter_segment" id="bg_style"><label><span class="emoji">🖼</span> <b>bg_style</b></label><div><input type="checkbox" id="bg_style__blank" name="blank" value="bg_style__blank"><label for="bg_style__blank">blank</label></div><div><input type="checkbox" id="bg_style__frame" name="frame" value="bg_style__frame"><label for="bg_style__frame">frame</label></div><div><input type="checkbox" id="bg_style__star" name="star" value="bg_style__star"><label for="bg_style__star">star</label></div><div><input type="checkbox" id="bg_style__circle" name="circle" value="bg_style__circle"><label for="bg_style__circle">circle</label></div><div><input type="checkbox" id="bg_style__square" name="square" value="bg_style__square"><label for="bg_style__square">square</label></div></div><div class="filter_segment" id="claw_left"><label><span class="emoji">👈</span> <b>claw_left</b></label><div><input type="checkbox" id="claw_left__regular" name="regular" value="claw_left__regular"><label for="claw_left__regular">regular</label></div><div><input type="checkbox" id="claw_left__big" name="big" value="claw_left__big"><label for="claw_left__big">big</label></div><div><input type="checkbox" id="claw_left__missing" name="missing" value="claw_left__missing"><label for="claw_left__missing">missing</label></div><div><input type="checkbox" id="claw_left__ball" name="ball" value="claw_left__ball"><label for="claw_left__ball">ball</label></div><div><input type="checkbox" id="claw_left__mushroom" name="mushroom" value="claw_left__mushroom"><label for="claw_left__mushroom">mushroom</label></div><div><input type="checkbox" id="claw_left__scissors" name="scissors" value="claw_left__scissors"><label for="claw_left__scissors">scissors</label></div></div><div class="filter_segment" id="claw_right"><label><span class="emoji">👉</span> <b>claw_right</b></label><div><input type="checkbox" id="claw_right__regular" name="regular" value="claw_right__regular"><label for="claw_right__regular">regular</label></div><div><input type="checkbox" id="claw_right__big" name="big" value="claw_right__big"><label for="claw_right__big">big</label></div><div><input type="checkbox" id="claw_right__missing" name="missing" value="claw_right__missing"><label for="claw_right__missing">missing</label></div><div><input type="checkbox" id="claw_right__ball" name="ball" value="claw_right__ball"><label for="claw_right__ball">ball</label></div><div><input type="checkbox" id="claw_right__mushroom" name="mushroom" value="claw_right__mushroom"><label for="claw_right__mushroom">mushroom</label></div><div><input type="checkbox" id="claw_right__scissors" name="scissors" value="claw_right__scissors"><label for="claw_right__scissors">scissors</label></div></div><div class="filter_segment" id="claws_unique"><label><span class="emoji">🙌</span> <b>claws_unique</b></label><div><input type="checkbox" id="claws_unique__false" name="false" value="claws_unique__false"><label for="claws_unique__false">false</label></div><div><input type="checkbox" id="claws_unique__true" name="true" value="claws_unique__true"><label for="claws_unique__true">true</label></div></div><div class="filter_segment" id="has_cigarette"><label><span class="emoji">🚬</span> <b>has_cigarette</b></label><div><input type="checkbox" id="has_cigarette__false" name="false" value="has_cigarette__false"><label for="has_cigarette__false">false</label></div><div><input type="checkbox" id="has_cigarette__true" name="true" value="has_cigarette__true"><label for="has_cigarette__true">true</label></div></div><div class="filter_segment" id="legs"><label><span class="emoji">🦵</span> <b>legs</b></label><div><input type="checkbox" id="legs__stubby" name="stubby" value="legs__stubby"><label for="legs__stubby">stubby</label></div><div><input type="checkbox" id="legs__insect" name="insect" value="legs__insect"><label for="legs__insect">insect</label></div><div><input type="checkbox" id="legs__skinny" name="skinny" value="legs__skinny"><label for="legs__skinny">skinny</label></div><div><input type="checkbox" id="legs__normal" name="normal" value="legs__normal"><label for="legs__normal">normal</label></div></div><div class="filter_segment" id="tail"><label><span class="emoji">💉</span> <b>tail</b></label><div><input type="checkbox" id="tail__normal" name="normal" value="tail__normal"><label for="tail__normal">normal</label></div><div><input type="checkbox" id="tail__syringe" name="syringe" value="tail__syringe"><label for="tail__syringe">syringe</label></div><div><input type="checkbox" id="tail__fat" name="fat" value="tail__fat"><label for="tail__fat">fat</label></div><div><input type="checkbox" id="tail__ball" name="ball" value="tail__ball"><label for="tail__ball">ball</label></div><div><input type="checkbox" id="tail__missing" name="missing" value="tail__missing"><label for="tail__missing">missing</label></div></div><div class="filter_segment" id="bloody_tail"><label><span class="emoji">🩸</span> <b>bloody_tail</b></label><div><input type="checkbox" id="bloody_tail__false" name="false" value="bloody_tail__false"><label for="bloody_tail__false">false</label></div><div><input type="checkbox" id="bloody_tail__true" name="true" value="bloody_tail__true"><label for="bloody_tail__true">true</label></div></div><div class="filter_segment" id="has_matches"><label><span class="emoji">🔥</span> <b>has_matches</b></label><div><input type="checkbox" id="has_matches__false" name="false" value="has_matches__false"><label for="has_matches__false">false</label></div><div><input type="checkbox" id="has_matches__true" name="true" value="has_matches__true"><label for="has_matches__true">true</label></div></div><div class="filter_segment" id="has_halo"><label><span class="emoji">👼</span> <b>has_halo</b></label><div><input type="checkbox" id="has_halo__false" name="false" value="has_halo__false"><label for="has_halo__false">false</label></div><div><input type="checkbox" id="has_halo__true" name="true" value="has_halo__true"><label for="has_halo__true">true</label></div></div><div class="filter_segment" id="multicolored"><label><span class="emoji">🦚</span> <b>multicolored</b></label><div><input type="checkbox" id="multicolored__false" name="false" value="multicolored__false"><label for="multicolored__false">false</label></div><div><input type="checkbox" id="multicolored__true" name="true" value="multicolored__true"><label for="multicolored__true">true</label></div></div><div class="filter_segment" id="colored_claws"><label><span class="emoji">🟢</span> <b>colored_claws</b></label><div><input type="checkbox" id="colored_claws__false" name="false" value="colored_claws__false"><label for="colored_claws__false">false</label></div><div><input type="checkbox" id="colored_claws__true" name="true" value="colored_claws__true"><label for="colored_claws__true">true</label></div></div><div class="filter_segment" id="colored_core"><label><span class="emoji">🔵</span> <b>colored_core</b></label><div><input type="checkbox" id="colored_core__false" name="false" value="colored_core__false"><label for="colored_core__false">false</label></div><div><input type="checkbox" id="colored_core__true" name="true" value="colored_core__true"><label for="colored_core__true">true</label></div></div><div class="filter_segment" id="colored_tail"><label><span class="emoji">🟣</span> <b>colored_tail</b></label><div><input type="checkbox" id="colored_tail__false" name="false" value="colored_tail__false"><label for="colored_tail__false">false</label></div><div><input type="checkbox" id="colored_tail__true" name="true" value="colored_tail__true"><label for="colored_tail__true">true</label></div></div><div class="filter_segment" id="multicolor_type"><label><span class="emoji">🦓</span> <b>color_type</b></label><div><input type="checkbox" id="multicolor_type__none" name="none" value="multicolor_type__none"><label for="multicolor_type__none">none</label></div><div><input type="checkbox" id="multicolor_type__stripes" name="stripes" value="multicolor_type__stripes"><label for="multicolor_type__stripes">stripes</label></div><div><input type="checkbox" id="multicolor_type__solid" name="solid" value="multicolor_type__solid"><label for="multicolor_type__solid">solid</label></div></div><div class="filter_segment" id="false_face"><label><span class="emoji">🤡</span> <b>false_face</b></label><div><input type="checkbox" id="false_face__none" name="none" value="false_face__none"><label for="false_face__none">none</label></div><div><input type="checkbox" id="false_face__tepid" name="tepid" value="false_face__tepid"><label for="false_face__tepid">tepid</label></div><div><input type="checkbox" id="false_face__frown" name="frown" value="false_face__frown"><label for="false_face__frown">frown</label></div><div><input type="checkbox" id="false_face__smile" name="smile" value="false_face__smile"><label for="false_face__smile">smile</label></div></div><div class="filter_segment" id="evil_eye"><label><span class="emoji">👁</span> <b>evil_eye</b></label><div><input type="checkbox" id="evil_eye__none" name="none" value="evil_eye__none"><label for="evil_eye__none">none</label></div><div><input type="checkbox" id="evil_eye__blue" name="blue" value="evil_eye__blue"><label for="evil_eye__blue">blue</label></div><div><input type="checkbox" id="evil_eye__red" name="red" value="evil_eye__red"><label for="evil_eye__red">red</label></div></div><div class="filter_segment" id="no_eyes"><label><span class="emoji">🙈</span> <b>no_eyes</b></label><div><input type="checkbox" id="no_eyes__false" name="false" value="no_eyes__false"><label for="no_eyes__false">false</label></div><div><input type="checkbox" id="no_eyes__true" name="true" value="no_eyes__true"><label for="no_eyes__true">true</label></div></div></div>
+</div>
+
+<div class="popup_selection">
+	<div class="popup_preview">
+		<a class="popup_preview_image" href="https://radstrike.com/scorpions/info/">
+			<img src="abandoned%20scorpions_files/0000_large.png">
+		</a>
+		<h4 id="scorp_no_label">Scorpion No.</h4>
+		<h1 id="scorp_no">0000</h1>
+		<div class="scorp_nickname_div">
+			<p id="scorp_nickname"></p>
+		</div>
+		<p id="available"></p>
+		<!-- <div class="popup_preview_spacer"></div> -->
+		<div class="popup_stats"></div>
+		<div class="more_info">
+			<a target="_blank" rel="noopener noreferrer" href="https://radstrike.com/scorpions/info/?number=0000">more info</a>
+		</div>
+	</div>
+</div>
+
+<div class="grid">
+</div>
+
+
+</body></html>
