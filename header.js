@@ -4,12 +4,12 @@ function lookupNumber() {
 	if (number == "") {
 		number = "0000";
 	}
-	open("/scorpions/info/?number=" + number);
+	open("/info.htm?number=" + number);
 }
 
 function lookupWallet() {
 	let addr = $('#lookup_wallet').val();
-	open("/scorpions/wallet/?addr=" + addr);
+	open("/wallet.html?addr=" + addr);
 }
 
 function isMobileWidth() {
