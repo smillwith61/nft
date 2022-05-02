@@ -461,6 +461,65 @@ input {
 	}
 }
 
+.wallet_page {
+	text-align: center;
+}
+
+/* .wallet_container {
+	width: 100%;
+	max-width: 700px;
+} */
+
+.wallet_grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, 200px);
+	/* grid-auto-flow: column; */
+	margin: 40px auto;
+	max-width: 1000px;
+	justify-content: center;
+	align-content: center;
+}
+
+.wallet_grid a {
+	text-decoration: none;
+}
+
+.wallet_grid_item {
+	/* max-width: 200px; */
+	text-align: center;
+	margin: 6px;
+}
+
+.wallet_grid_item img {
+	width: 100%;
+	margin: 0 0 -6px 0;
+}
+
+.wallet_addr_div {
+	color: gray;
+	margin: 0 40px;
+	word-wrap: break-word;
+}
+
+@media all and (max-width: 740px) {
+	.wallet_grid {
+		grid-template-columns: repeat(auto-fill, 160px);
+	}
+}
+
+.colors {
+	margin: 20px auto;
+	max-width: 240px;
+	text-align: center;
+}
+
+.downloads_container_div {
+	margin: 0 0 20px 0;
+}
+
+.downloads_link a {
+	text-decoration: none;
+}
 
 html * {
 }
