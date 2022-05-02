@@ -43,7 +43,7 @@ $(document).ready(function() {
 		downloadsVisibleText();
 	})
 
-	$.getJSON("../metadata.json") .done(function(json) {
+	$.getJSON("../test.json") .done(function(json) {
 		$.getJSON("../reserved.json") .done(function(reservedJson) {
 
 			$.getJSON("../history.json") .done(function(infoJson) {
